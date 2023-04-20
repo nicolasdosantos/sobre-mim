@@ -1,0 +1,142 @@
+:root {
+    --texto: #527393;
+    --principal: #92E3A9;
+    --header: #64ed55;
+    --main: #5EF38C(138, 109, 109);
+    --fundo: #ecdddd;
+    --paragrafo: #263238;
+    --titulo: #3f556a;
+    --botao: #8fe0a6;
+    --boxshadow: #83ce98;
+}
+
+* {
+    margin: 0px;
+    text-decoration: none;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    background-color: var(--principal);
+    color: var(--titulo);
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    display: flex;
+}
+
+nav a {
+    color: var(--titulo);
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.cima {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 26px;
+}
+
+.cima img {
+    width: 420px;
+    margin-left: 130px;
+    /* margin-bottom: 20px; */
+    border: 7px solid var(--principal);
+    border-radius: 180px;
+}
+
+.cima .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 65px;
+    color: var(--texto);
+}
+
+.cima p{
+    margin: 12px;
+    
+}
+
+.cima h2{
+    margin: 15px;
+    color: var(--titulo);
+}
+
+  .cima {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - -31px));
+  }
+  .meio {
+    clip-path: polygon(0 0,100% 16px,100% 100%,0 100%);
+    margin-top: -13px;
+  }
+.meio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: var(--principal);
+    align-items: center;
+    padding: 1px;
+    color: var(--texto);
+}
+
+.meio .meio-esquerda, .meio .meio-centro, .meio .meio-direita{
+    border-radius: 50px;
+    background: #92E3A9;
+    box-shadow:  15px 15px 30px #82ca96,-15px -15px 30px #a2fcbc;
+    padding: 20px;
+    margin: 30px;
+}
+
+.meio h3{
+    color: var(--titulo);
+}
+/* -------------------------------------------------------- */
+ button {
+    padding: 12px 6px;
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--botao);
+    box-shadow: var(--boxshadow) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    transition: all .5s ease;
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: var(--botao);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--boxshadow) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: var(--botao);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--boxshadow) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   } 
