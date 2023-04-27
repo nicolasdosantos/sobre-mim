@@ -16,6 +16,9 @@
     padding: 0px;
     font-family: 'Quicksand', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 header {
     background-color: var(--principal);
